@@ -3,6 +3,7 @@
 
 
 <u><b>File 1:</b></u>
+```
 {
   "PartyRec": "123",
   "PersonIndicator": false,
@@ -34,9 +35,9 @@
     }
   ]
 }
-
+```
 <u><b>File 2:</b></u>
-
+```
 {
   "PartyRec": "1234",
   "PersonIndicator": true,
@@ -69,9 +70,9 @@
     ]
   }
 }
-
+```
 <u><b>Output</b></u>
-
+```
 {
   "PartyRec" : "123/1234(Not Match)",
   "PersonIndicator" : "false/true(Not Match)",
@@ -108,3 +109,4 @@
     "listDesc" : "desc1/null(Not Match)"
   } ]
 }
+```
