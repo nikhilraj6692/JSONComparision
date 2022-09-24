@@ -1,0 +1,36 @@
+{
+  "PartyRec" : "123/1234(Not Match)",
+  "PersonIndicator" : "false/true(Not Match)",
+  "OrgPartyInfo" : {
+    "PersonInfo" : {
+      "Name" : "Nikhil/Ashwin(Not Match)",
+      "Roll" : "29/29(Match)",
+      "address1" : "address/null(Not Match)",
+      "Address" : [ {
+        "add1" : "null/bhosari(Not Match)"
+      }, {
+        "add2" : "null/vishrantwadi(Not Match)"
+      } ]
+    },
+    "InnerList" : [ {
+      "listname" : "list2/list33(Not Match)",
+      "listDesc" : "desc2/null(Not Match)"
+    }, {
+      "listname" : "list3/null(Not Match)",
+      "listDesc" : "desc3/null(Not Match)"
+    } ],
+    "DummyList" : [ {
+      "listClass" : "null/class(Not Match)"
+    }, {
+      "listname" : "null/list11(Not Match)",
+      "listDesc" : "null/desc11(Not Match)"
+    } ]
+  },
+  "DummyList" : [ {
+    "listname" : "list/null(Not Match)",
+    "listDesc" : "desc/null(Not Match)"
+  }, {
+    "listname" : "list1/null(Not Match)",
+    "listDesc" : "desc1/null(Not Match)"
+  } ]
+}

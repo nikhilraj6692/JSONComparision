@@ -1,0 +1,32 @@
+{
+  "PartyRec": "1234",
+  "PersonIndicator": true,
+  "OrgPartyInfo": {
+    "PersonInfo": {
+      "Name": "Ashwin",
+      "Roll": 29,
+      "Address": [
+        {
+          "add1": "bhosari"
+        },
+        {
+          "add2": "vishrantwadi"
+        }
+      ]
+    },
+    "InnerList": [
+      {
+        "listname": "list33"
+      }
+    ],
+    "DummyList": [
+      {
+        "listClass": "class"
+      },
+      {
+        "listname": "list11",
+        "listDesc": "desc11"
+      }
+    ]
+  }
+}

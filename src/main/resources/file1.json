@@ -1,0 +1,31 @@
+{
+  "PartyRec": "123",
+  "PersonIndicator": false,
+  "OrgPartyInfo": {
+    "PersonInfo": {
+      "Name": "Nikhil",
+      "Roll": 29,
+      "address1": "address"
+    },
+    "InnerList": [
+      {
+        "listname": "list2",
+        "listDesc": "desc2"
+      },
+      {
+        "listname": "list3",
+        "listDesc": "desc3"
+      }
+    ]
+  },
+  "DummyList": [
+    {
+      "listname": "list",
+      "listDesc": "desc"
+    },
+    {
+      "listname": "list1",
+      "listDesc": "desc1"
+    }
+  ]
+}
