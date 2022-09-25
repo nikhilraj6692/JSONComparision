@@ -1,31 +1,29 @@
 {
   "PartyRec": "123",
-  "PersonIndicator": false,
   "OrgPartyInfo": {
+    "PartyName": "abc",
     "PersonInfo": {
-      "Name": "Nikhil",
-      "Roll": 29,
-      "address1": "address"
+      "Name": "Nikhil"
     },
     "InnerList": [
       {
         "listname": "list2",
-        "listDesc": "desc2"
+        "listDesc": "desc2",
+        "listValue": [
+          {
+            "val1": "val1"
+          }
+        ]
       },
       {
-        "listname": "list3",
-        "listDesc": "desc3"
+        "listname": "list2",
+        "listDesc": "desc2",
+        "listValue": [
+          {
+            "val1": "val1"
+          }
+        ]
       }
     ]
-  },
-  "DummyList": [
-    {
-      "listname": "list",
-      "listDesc": "desc"
-    },
-    {
-      "listname": "list1",
-      "listDesc": "desc1"
-    }
-  ]
+  }
 }

@@ -1,31 +1,18 @@
 {
-  "PartyRec": "1234",
-  "PersonIndicator": true,
+  "PartyRec": "133",
   "OrgPartyInfo": {
+    "PartyName": "abc",
     "PersonInfo": {
-      "Name": "Ashwin",
-      "Roll": 29,
-      "Address": [
-        {
-          "add1": "bhosari"
-        },
-        {
-          "add2": "vishrantwadi"
-        }
-      ]
+      "Name": "Ashwin"
     },
     "InnerList": [
       {
-        "listname": "list33"
-      }
-    ],
-    "DummyList": [
-      {
-        "listClass": "class"
+        "listname": "list3",
+        "listDesc": "desc4"
       },
       {
-        "listname": "list11",
-        "listDesc": "desc11"
+        "listname": "list33",
+        "listDesc": "desc44"
       }
     ]
   }

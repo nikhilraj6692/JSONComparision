@@ -53,9 +53,21 @@ public class JSONCompareFunction implements BiFunction<String, String, Map<Strin
                 resultMap.put(subKeys[0], addToResultMap(subKeys, 0, flattenedMap1, flattenedMap2, resultMap));
             }
 
+            //write to excel
+            Map<String, Object> excelMap = new LinkedHashMap<>();
+            for(String key: combinedKeys){
+                excelMap.put(key, getCombinedValue(flattenedMap1, flattenedMap2, key));
+            }
+            new DocumentGeneratorService().writeToExcel(excelMap, "jsoncompare.xlsx");
+
             return resultMap;
         }
         return null;
+    }
+
+    private Object getCombinedValue(Map<String, Object> flattenedMap1, Map<String, Object> flattenedMap2, String key) {
+        return flattenedMap1.get(key) + "/" + flattenedMap2.get(key) + "(" + (
+            Objects.equals(flattenedMap1.get(key), flattenedMap2.get(key)) ? "Match" : "Not Match") + ")";
     }
 
     private Object addToResultMap(String[] subKeys, int index, Map<String, Object> flatennedMap1,
@@ -64,8 +76,7 @@ public class JSONCompareFunction implements BiFunction<String, String, Map<Strin
         //if subkeys is of only one length, meaning that the key value pair is a simple key value pair like "Name":"Ashwin"
         if (index == subKeys.length - 1) {
             String key = joinString(subKeys, "/");
-            return flatennedMap1.get(key) + "/" + flatennedMap2.get(key) + "(" + (
-                Objects.equals(flatennedMap1.get(key), flatennedMap2.get(key)) ? "Match" : "Not Match") + ")";
+            return getCombinedValue(flatennedMap1, flatennedMap2, key);
         } else
         //in this case,two complxities may happen, one that the value is a map or the value is of type list
         {
